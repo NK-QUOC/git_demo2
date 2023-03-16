@@ -37,3 +37,4 @@ if __name__ == "__main__":
 
 	print(ranks_player)
 	print("resolve conflict")
+	print("conflict")
