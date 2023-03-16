@@ -36,3 +36,4 @@ if __name__ == "__main__":
 		ranks_player.append(1)
 
 	print(ranks_player)
+	print("conflict")
