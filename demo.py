@@ -19,14 +19,24 @@ def check_matrix_symmetry(matrix):
 
 if __name__ == "__main__":
 
-	matrix = [[0,1,1,1,0],
-			  [0,1,0,1,0],
-			  [1,0,0,0,1],
-			  [0,1,0,1,0],
-			  [0,1,1,1,0]]
-	matrix_symmetry = check_matrix_symmetry(matrix)
-	if matrix_symmetry:
-		print("Yes")
-	else:
-		print("No")
-	print("demo")
+	# matrix = [[0,1,1,1,0],
+	# 		  [0,1,0,1,0],
+	# 		  [1,0,0,0,1],
+	# 		  [0,1,0,1,0],
+	# 		  [0,1,1,1,0]]
+	# matrix_symmetry = check_matrix_symmetry(matrix)
+	# if matrix_symmetry:
+	# 	print("Yes")
+	# else:
+	# 	print("No")
+	# print("demo")
+
+	ar = [10,20,20,10,10,30,50,10,20]
+	ar_set = set(ar)
+
+	result = 0
+	for item in ar_set:
+		count = ar.count(item)
+		result += int(count/2)
+
+	print(result)
